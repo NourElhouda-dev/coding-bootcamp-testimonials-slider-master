@@ -15,6 +15,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
+  
   @include responsive() {
     display: flex;
     justify-content: center;
@@ -22,7 +23,8 @@ body {
     height: 100vh;
   }
 
-  &::after {
+  /* I removed this you already used curve as background in the .container */
+  /* &::after {
     content: '';
     display: block;
     width: 450px;
@@ -32,7 +34,7 @@ body {
     @include responsive() {
       display: none;
     }
-  }
+  } */
 }
 
 .testimonial {
@@ -169,8 +171,11 @@ body {
       justify-content: center;
       padding: 30px;
       background-image: url(./images/pattern-curve.svg);
-      background-position: center bottom;
+      /* I added this */
+      background-position: left bottom;
       background-size: contain;
+      /* background-position: center bottom;
+      background-size: contain; */
       background-repeat: no-repeat;
   }
   .slider {
@@ -278,6 +283,10 @@ body {
       background-image: url(./images/icon-prev.svg);
   }
   @media only screen and (min-width: 768px) {
+      /* I added this */
+      .container {
+        background-size: auto;
+      }
       .slide {
           flex-direction: row;
           text-align: left;
