@@ -207,19 +207,17 @@ html {
     align-items: center;
     gap: 20px;
     text-align: center;
+    /* I added this */
+    position: static;
+    translate: 0;
+    transition: 0.6s ease;
 }
 
 /* I added this */
-.slide-1 {
-  position: static;
-  translate: 0;
-  transition: 0.5s ease;
-}
-
-.slide-2 {
+.hidden-slide {
   position: absolute;
   translate: 120%;
-  transition: 0.5s ease;
+  transition: 0.6s ease;
 }
 /***************/
 
